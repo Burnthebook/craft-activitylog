@@ -35,7 +35,7 @@ class SettingsController extends Controller
      * @return Response The rendered result
      * @throws \yii\web\ForbiddenHttpException
      */
-    public function actionPluginSettings($settings = null): Response
+    public function actionPluginSettings($settings = null) : Response
     {
         $this->requirePermission('activitylog:settings');
 

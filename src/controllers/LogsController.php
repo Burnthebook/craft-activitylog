@@ -24,13 +24,13 @@ use nav33d\activitylog\ActivityLog as ActivityLogPlugin;
 
 class LogsController extends Controller
 {
-    public function beforeAction($action)
+    public function beforeAction($action) : bool
     {
         $this->view->registerAssetBundle(ActivityLogAsset::class);
         return parent::beforeAction($action);
     }
 
-    public function actionIndex()
+    public function actionIndex() : Response
     {
         $this->requirePermission('activitylog:view-logs');
 
@@ -57,7 +57,7 @@ class LogsController extends Controller
         $this->renderTemplate('activitylog/logs/_index', $variables);
     }
 
-    public function actionView($id)
+    public function actionView($id) : Response
     {
         $this->requirePermission('activitylog:view-logs');
 

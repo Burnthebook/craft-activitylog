@@ -40,7 +40,7 @@ class Settings extends Model
      */
     public $logsLimit = 30;
 
-    public function rules()
+    public function rules() : array
     {
         return [
             ['pluginName', 'required'],

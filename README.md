@@ -1,10 +1,10 @@
-# Activity Log plugin for Craft CMS 3
+# Activity Log plugin for Craft CMS 4
 
 Activity Log records user's activity in the control panel.
 
 ## Requirements
 
-This plugin requires Craft CMS 3.0.0 or later.
+This plugin requires Craft CMS 4.0.0 or later.
 
 ## Installation
 
@@ -100,3 +100,4 @@ You should also grant them the Access Activity Log permission under General perm
 - Activity Log icon by [Noun Project](https://thenounproject.com/search/?q=activity&i=1288369)
 
 Brought to you by [Naveed Ziarab](https://naveedziarab.co.uk)
+Updated for Craft 4 by [Burnthebook](https://www.burnthebook.co.uk)

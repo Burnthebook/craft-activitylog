@@ -102,7 +102,7 @@ class ActivityLog extends Plugin
     /**
      * Plugin settings model
      */
-    protected function createSettingsModel()
+    protected function createSettingsModel() : ?craft\base\Model
     {
         return new \nav33d\activitylog\models\Settings();
     }
@@ -111,7 +111,7 @@ class ActivityLog extends Plugin
     /**
      * @inheritdoc
      */
-    public function getSettingsResponse()
+    public function getSettingsResponse() : mixed
     {
         Craft::$app->getResponse()->redirect(UrlHelper::cpUrl('activitylog/settings'));
     }
@@ -120,7 +120,7 @@ class ActivityLog extends Plugin
     /**
      * @inheritdoc
      */
-    public function getCpNavItem()
+    public function getCpNavItem() : ?array
     {
         $subNavs = [];
         $navItem = parent::getCpNavItem();
